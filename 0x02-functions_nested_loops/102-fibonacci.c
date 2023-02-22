@@ -2,7 +2,7 @@
 
 /**
  * main - Prints first 50 Fibonacci numbers, starting with 1 and 2,
- * seperated bt a comma fellowed by a space.
+ * seperated bt a comma followed by a space.
  *
  * Return: Always 0
  */
