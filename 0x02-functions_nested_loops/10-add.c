@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * add - add two numbers
@@ -8,5 +8,9 @@ nclude "main.h"
  */
 int add(int a, int b)
 {
+	int c;
+
+	c = a + b;
+
 	return (a + b);
 }
