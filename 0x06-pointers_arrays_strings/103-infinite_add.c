@@ -1,52 +1,28 @@
 #include "main.h"
 
-char *add_strings(char *n1, char *n2, char *r, int r_index);
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
-
 /**
- * add_strings - adds the numbers stored in two strings
- * @n1: the string containing the first number to be added
- * @n2: the string containing the second number to be added
- * @r: the buffer to store the result
- * @r_index: the current index of the buffer
- *
- * Return: if r can store the sum - a pointer to the result
- * if r cannot store the sum -0
+ * rev_string - reverse array
+ * @n: integer params
+ * Return: 0
  */
-char *add_strings(char *n1, char *n2, char *r, int r_index)
 
+void rev_string(char *n)
 {
-	int num, tens = 0;
+	int i = 0;
+	int j = 0;
+	char temp;
 
-	for (; *n1 && *n2; n1--, n2--, r_index--)
-
+	while (*(n + i) != '\0')
 	{
-		num = (*n1 - '0') + (*n2 - '0');
-		num += tens;
-		*(r + r_index) = (num % 10) + '0';
-		tens = num / 10;
+		i++;
 	}
+	i--;
 
-	for (; *n1; n1--, r_index--)
+	for (j = 0; j < i; j++, i--)
 	{
-		num = (*n1 - '0') + tens;
-		*(r + r_index) = (num % 10) + '0';
-		tens = num / 10;
+		temp = *(n + j);
+		*(n + j) = *(n + i);
+		*(n + i) = temp;
 	}
-
-	for (; *n2; n2--, r_index--)
-	{num - (*n2 - '0') + tens;
-		*(r + r_index) = (num % 10) = '0';
-		tens = num / 10;
-	}
-
-	if (tens && r_index >= 0)
-	{
-		*(r + r_index) = (tens % 10) + '0';
-		return (r + r_index);
-	}
-
-	else if (tens && r_index < 0)
-		return (0);
-	return (r + r_index + 1);
 }
+
