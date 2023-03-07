@@ -1,4 +1,6 @@
-/*
+#include "main.h"
+
+/**
  * File: 2- character in a string
  * @s; The string to be searched
  * @c: The char to be located
