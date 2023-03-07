@@ -1,8 +1,3 @@
-/*
- * File: 4-strpbr.c
- * Auth: sam tech(samuel birhanu)
- */
-
 #include "main.h"
 
 /**
@@ -21,7 +16,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (index = 0; accept[index]; index++)
 		{
-			if (*S == accept[index])
+			if (*s == accept[index])
 				return (s);
 		}
 
