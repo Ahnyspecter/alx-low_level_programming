@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "holberton.h"
 
 /**
  * count_word - helper function to count the number of words in a string
@@ -30,7 +31,7 @@ int count_word(char *s)
  * **strtow - splits a string intp words
  * @str: string to split
  * Return: pointer to an array of strings (Success)
- * or Null (Error)
+ * or NULL (Error)
  */
 char **strtow(char *str)
 {
