@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * int_dog - Initialies a variable of type struct dog.
+ * init_dog - Initialies a variable of type struct dog.
  * @d: The dog to be initialized.
  * @name: The name of the dog.
  * @age: The age of thr dog.
