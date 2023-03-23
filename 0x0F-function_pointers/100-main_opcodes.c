@@ -6,7 +6,7 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	byts = atoi(argv[1]);
 
-	if (bytes, 0)
+	if (bytes < 0)
 	{
 		printf("Error\n");
 		exit(2);
