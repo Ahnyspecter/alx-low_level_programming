@@ -3,15 +3,15 @@
 	#include <stdio.h>
 	#include "3-calc.h"
 
-	/**
-	 * main - Prints the result of simple operations.
-	 * @argc: the number of arguments supplied to the program
-	 * @argv: an array of pointers to the arguments
-	 *
-	 * Return: Always 0
-	 */
+/**
+ * main - Prints the result of simple operations.
+ * @argc: the number of arguments supplied to the program
+ * @argv: an array of pointers to the arguments
+ *
+ * Return: Always 0
+ */
 
-	int main(int__attribute__((__unused__))argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
