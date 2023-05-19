@@ -4,8 +4,21 @@
 #include "lists.h"
 
 /**
- * main - check the code
+ * print_dlistint - prints all the elements if a doubly linked list
+ * @h: doubly linked list of type dlidtint_t to print
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: number of nodes
  */
-int main(void)
+size_t print_dlistint(const dlistint_t *h)
+{
+	size_t num = 0;
+
+	while (h)
+	{
+		printf("%d\n", h->n);
+		num++;
+		h = h->next;
+	}
+
+	return (num);
+}
