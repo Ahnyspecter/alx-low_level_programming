@@ -3,7 +3,7 @@
  * _strchr - Entry point
  * @s: input
  * @c: input
- * Retur: Always 0 (success)
+ * Return: Always 0 (success)
  */
 char *_strchr(char *s, char c)
 {
